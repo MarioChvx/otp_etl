@@ -1,0 +1,80 @@
+{
+    'championId': 41, 
+    'championName': 'Gangplank', 
+    'championTransform': 0, 
+    'eligibleForProgression': True, 
+    'individualPosition': 'Invalid', 
+    'lane': 'NONE', 
+    'participantId': 2, 
+    'perks': 
+    {
+        'statPerks': 
+        {
+            'defense': 5001, 
+            'flex': 5008, 
+            'offense': 5007
+        },
+        'styles': 
+        [
+            {
+                'description': 'primaryStyle', 
+                'selections': 
+                [
+                    {
+                        'perk': 8128, 
+                        'var1': 914, 
+                        'var2': 18, 
+                        'var3': 0
+                    }, 
+                    {
+                        'perk': 8126, 
+                        'var1': 985, 
+                        'var2': 0, 
+                        'var3': 0
+                    }, 
+                    {
+                        'perk': 8138, 
+                        'var1': 18, 
+                        'var2': 0, 
+                        'var3': 0
+                    }, 
+                    {
+                        'perk': 8106, 
+                        'var1': 5, 
+                        'var2': 0, 
+                        'var3': 0
+                    }
+                ], 
+                'style': 8100
+            }, 
+            {
+                'description': 'subStyle', 
+                'selections': 
+                [
+                    {
+                        'perk': 8017, 
+                        'var1': 697, 
+                        'var2': 0, 
+                        'var3': 0
+                    }, 
+                    {
+                        'perk': 9111, 
+                        'var1': 1256, 
+                        'var2': 410, 
+                        'var3': 0
+                    }
+                ], 
+                'style': 8000
+            }
+        ]
+    }, 
+    'profileIcon': 3550, 
+    'puuid': 'drs-J5hPVG6ymeoMavi4d4IQZFIHc2BpalKyUkxYuAJkcphWSxKekPHEMjlf6kufbjZTuc1keiZi5A', 
+    'role': 'SUPPORT', 
+    'summonerId': 'nbQotLuOEYXkrm-EggaYVOZDtrUx_dm-0GgJhbvakjXTwaI', 
+    'summonerLevel': 59, 
+    'summonerName': 'Chocotaartje', 
+    'teamId': 100, 
+    'teamPosition': '', 
+    'win': True
+}
