@@ -13,8 +13,33 @@ summoners = {
         'puuid' : ''
     },
     {
+        'name' : 'b0rnn t0 0rnn',
+        'region' : 'euw1',
+        'puuid' : ''
+    },
+    {
+        'name' : 'PochoChamps Only',
+        'region' : 'euw1',
+        'puuid' : ''
+    },
+    {
         'name' : 'perc0010',
-        'region' : 'lan1',
+        'region' : 'la1',
+        'puuid' : ''
+    },
+    {
+        'name' : 'perc0010',
+        'region' : 'na1',
+        'puuid' : ''
+    },
+    {
+        'name' : 'Ornnold',
+        'region' : 'la1',
+        'puuid' : ''
+    },
+    {
+        'name' : 'Ornnie Coleman',
+        'region' : 'na1',
         'puuid' : ''
     },
 }
@@ -52,7 +77,7 @@ def df_match_row(match):
         'gameDuration' : [match['info']['gameDuration']],
         'gameMode' : [match['info']['gameMode']],
         'gameType' : [match['info']['gameType']],
-        'gameVerison' : [match['info']['gameVersion']],
+        'gameVersion' : [match['info']['gameVersion']],
         'mapId' : [match['info']['mapId']]
     }
     return pd.DataFrame(row_match)
