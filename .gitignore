@@ -1,6 +1,7 @@
 test/
 
-# Apikey
+# Paswords
+password.txt 
 apikey.txt
 
 # Byte-compiled / optimized / DLL files
