@@ -1,49 +1,6 @@
 from riotwatcher import LolWatcher, ApiError
 import pandas as pd
 
-summoners = {
-    {
-        'name' : 'Thebausffs',
-        'region' : 'euw1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'twitchtv makkro0',
-        'region' : 'euw1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'b0rnn t0 0rnn',
-        'region' : 'euw1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'PochoChamps Only',
-        'region' : 'euw1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'perc0010',
-        'region' : 'la1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'perc0010',
-        'region' : 'na1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'Ornnold',
-        'region' : 'la1',
-        'puuid' : ''
-    },
-    {
-        'name' : 'Ornnie Coleman',
-        'region' : 'na1',
-        'puuid' : ''
-    },
-}
-
 def get_api_key():
     from pathlib import Path
     path = Path(__file__).parent
