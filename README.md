@@ -1,4 +1,4 @@
-# OTP-analysis
+# otp-etl
 
 This is a personal project with multiple steps:
 
