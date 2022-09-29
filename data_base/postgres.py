@@ -1,21 +1,14 @@
 import psycopg2
 import numpy as np
-
-def get_database_password():
-    from pathlib import Path
-    path = Path(__file__).parent
-    path = path.joinpath('database.txt')
-    with path.open() as f:
-        key = f.readline()
-    f.close()
-    return key
+import files.get_config as get_config
 
 def connection_history():
+    db_data = get_config.db_data()
     try:
         connection = psycopg2.connect(
             host = 'localhost',
-            user = 'postgres',
-            password = get_database_password,
+            user = db_data['user'],
+            password = db_data['password'],
             database = 'otp_analysis'
         )
         return connection

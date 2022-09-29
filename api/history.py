@@ -1,21 +1,9 @@
 from riotwatcher import LolWatcher, ApiError
 import pandas as pd
-
-def get_api_key():
-    from pathlib import Path
-    import yaml
-    from yaml.loader import SafeLoader
-
-    path = Path(__file__).parents[1]
-    path = path.joinpath('config','passwords.yaml')
-    with path.open() as f:
-        data = yaml.load(f, Loader = SafeLoader)['api_key']
-    f.close()
-    
-    return data
+import files.get_config as get_config
 
 def build_watcher():
-    return LolWatcher(get_api_key())
+    return LolWatcher(get_config.api_key())
 
 def get_players_puuids(summoners, watcher):
     for summoner in summoners:
