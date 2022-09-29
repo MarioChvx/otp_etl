@@ -5,10 +5,9 @@ import files.get_config as get_config
 def build_watcher():
     return LolWatcher(get_config.api_key())
 
-def get_players_puuids(summoners, watcher):
-    for summoner in summoners:
-        player_details = watcher.summoner.by_name(summoner['name'], summoner['region'])
-        summoner['puuid'] = player_details['puuid']
+def get_player_puuid(summoner, watcher):
+    summoner_data = watcher.summoner.by_name(summoner['region'], summoner['name'])
+    return summoner_data['puuid']
 
 def matches_day(summoners, start_epoch, watcher):
     matches_total = []

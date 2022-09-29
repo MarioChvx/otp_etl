@@ -9,7 +9,7 @@ def connection_history():
             host = 'localhost',
             user = db_data['user'],
             password = db_data['password'],
-            database = 'otp_analysis'
+            database = db_data['name']
         )
         return connection
     except Exception as ex:
