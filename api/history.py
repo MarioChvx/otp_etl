@@ -3,12 +3,16 @@ import pandas as pd
 
 def get_api_key():
     from pathlib import Path
-    path = Path(__file__).parent
-    path = path.joinpath('apikey.txt')
+    import yaml
+    from yaml.loader import SafeLoader
+
+    path = Path(__file__).parents[1]
+    path = path.joinpath('config','passwords.yaml')
     with path.open() as f:
-        key = f.readline()
+        data = yaml.load(f, Loader = SafeLoader)['api_key']
     f.close()
-    return key
+    
+    return data
 
 def build_watcher():
     return LolWatcher(get_api_key())
