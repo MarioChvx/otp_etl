@@ -3,7 +3,7 @@ test/
 # Paswords
 password.txt 
 apikey.txt
-pswds.yaml
+passwords.yaml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
