@@ -20,7 +20,7 @@ def read_config(file_name: str):
 
 def write_players(players: dict):
     with _path.joinpath('players.json').open('w') as f:
-        json.dump(players, f)
+        json.dump(players, f, indent = 2)
     f.close()
 
 

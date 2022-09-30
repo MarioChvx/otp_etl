@@ -35,6 +35,6 @@ def create_cursor(connection):
 def create_rows(df_data, table, cursor, connection):
     cols = '","'.join([str(title) for title in df_data.columns.tolist()])
     for index, data in df_data.iterrows():
-        sql = 'INSERT INTO public.'+table+'("'+cols+'") VALUES ("'+'","'.join(map(str,data.values))+'")'
+        sql = 'INSERT INTO public.'+table+'("'+cols+'") VALUES ('+"'"+"','".join(map(str,data.values))+"')"
         cursor.execute(sql)
     connection.commit()

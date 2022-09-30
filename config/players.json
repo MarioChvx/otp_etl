@@ -1,42 +1,42 @@
 [
-    {
-        "name" : "Thebausffs",
-        "region" : "euw1",
-        "puuid" : ""
-    },
-    {
-        "name" : "twitchtv makkro0",
-        "region" : "euw1",
-        "puuid" : ""
-    },
-    {
-        "name" : "b0rnn t0 0rnn",
-        "region" : "euw1",
-        "puuid" : ""
-    },
-    {
-        "name" : "PochoChamps Only",
-        "region" : "euw1",
-        "puuid" : ""
-    },
-    {
-        "name" : "perc0010",
-        "region" : "la1",
-        "puuid" : ""
-    },
-    {
-        "name" : "perc0010",
-        "region" : "na1",
-        "puuid" : ""
-    },
-    {
-        "name" : "Ornnold",
-        "region" : "la1",
-        "puuid" : ""
-    },
-    {
-        "name" : "Ornnie Coleman",
-        "region" : "na1",
-        "puuid" : ""
-    }
+  {
+    "name": "Thebausffs",
+    "region": "euw1",
+    "puuid": "zcNeWlW07ZVWMWBUEWHxUS-HhcJctsJhJP4B8dh1z7MTgvELf1kv7OTKbuktwNpxYrbKDK-TuxaxpQ"
+  },
+  {
+    "name": "twitchtv makkro0",
+    "region": "euw1",
+    "puuid": "18Epnc8is34Go2qwhpvLnYhVbFkYseXc2lDH68ZBPbRe3trxeYD_3v2nvXV1qCGvbnsVl6xqCNkPrA"
+  },
+  {
+    "name": "b0rnn t0 0rnn",
+    "region": "euw1",
+    "puuid": "cnaddY-V83EcOr1H376HXLrpd5JiPZwTaX1wquwN3rbdZ1RK-aARFSOEGOfXgLSQL-DRiW3u2iRXaQ"
+  },
+  {
+    "name": "PochoChamps Only",
+    "region": "euw1",
+    "puuid": "Fi2Aq6m3j_TuCCjm2Ajc-jQ-ZN9rQCwR0HTkJEPSbGrTM4MTZyO18xI7bUiTOZ-LLopd2lU5Z4PvPw"
+  },
+  {
+    "name": "perc0010",
+    "region": "la1",
+    "puuid": "tPdIy6mxyqa0KmFxwR6M97aZCR-CZLPG5Z5xC7bBAKlmM74YN2gM92-zFKra3fydYA-j6CEIf1aiEQ"
+  },
+  {
+    "name": "perc0010",
+    "region": "na1",
+    "puuid": "SRB0Sfy7gvgikz4A0kMwvOK45EE3L5Ru-9-U1PYmUOZpYDCQxNg8wIa8xnIK5bOM483H-aCVE2mvUg"
+  },
+  {
+    "name": "Ornnold",
+    "region": "la1",
+    "puuid": "LKml3iQPYiL8xAa838ddsLZb-z8INbjaoUNBFQeze_2O0Ukn8kqcRbCJ8W67GTGCYjauep0JvmPNUg"
+  },
+  {
+    "name": "Ornnie Coleman",
+    "region": "na1",
+    "puuid": "VuE0UFazwUYEWtQX2LoItmnsRTBs0v_jBrs2opKKy59d43DmtCCcJU_DwloMxmFC2OEXi7WSMAo2FA"
+  }
 ]
