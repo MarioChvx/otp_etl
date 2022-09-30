@@ -13,7 +13,7 @@ def get_player_puuid(summoner, watcher):
 def players_matches_day(summoners, start_epoch, watcher):
     player_matches = []
     for summoner in summoners:
-        matches_player = watcher.match.matchlist_by_puuid(summoner['region'], summoner['puuid'], start_time = start_epoch, end_time = start_epoch + 86400)
+        matches_player = watcher.match.matchlist_by_puuid(summoner['region'], summoner['puuid'], count = 100, start_time = start_epoch, end_time = start_epoch + 86400)
         player_matches += [(summoner['region'], match) for match in matches_player]
     return player_matches
 
