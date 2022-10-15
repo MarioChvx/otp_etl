@@ -34,19 +34,29 @@ def test():
 
     # Build DataFrames
     df_pariticipations = api.df_participants_rows(_matches_details[0])
-    print(df_pariticipations)
+    # print(df_pariticipations)
 
-    for i in df_pariticipations:
-        print(i)
+    # for i in df_pariticipations:
+    #     print(i)
 
     df_matches = api.df_match_row(_matches_details[0])
-    print(df_matches)
+    # print(df_matches)
+
+    query_match = db.create_rows(df_matches, 'match')
+    query_participation = db.create_rows(df_pariticipations, 'participation')
 
     _connection = db.connection_history()
     _cursor = db.create_cursor(_connection)
 
-    db.create_rows(df_matches, 'match', _cursor, _connection)
-    db.create_rows(df_pariticipations, 'participation', _cursor, _connection)
+    print('---' * 5 + 'Match' + '---' * 5)
+    for sql in query_match:
+        db.execute_sql(_connection, _cursor, sql)
+    print(f'\n')
+
+    print('---' * 5 + 'Participation' + '---' * 5)
+    for sql in query_participation:
+        db.execute_sql(_connection, _cursor, sql)
+
 
 def main():
     test()

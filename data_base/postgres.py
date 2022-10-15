@@ -32,9 +32,24 @@ def create_cursor(connection):
 #     cursor.execute(f"INSERT INTO public.persona (id, nombre) VALUES ({id}, '{nombre}');")
 #     connection.commit()
 
-def create_rows(df_data, table, cursor, connection):
+def exception_handler(function):
+    def try_except_decorator(*args, **kwargs):
+        try:
+            function(*args, **kwargs)
+        except Exception as e:
+            print(e)
+    return try_except_decorator
+
+@exception_handler
+def execute_sql(connection, cursor, sql):
+    cursor.execute(sql)
+    print(sql)
+    connection.commit()
+
+def create_rows(df_data, table):
+    query = list()
     cols = '","'.join([str(title) for title in df_data.columns.tolist()])
     for index, data in df_data.iterrows():
         sql = 'INSERT INTO public.'+table+'("'+cols+'") VALUES ('+"'"+"','".join(map(str,data.values))+"')"
-        cursor.execute(sql)
-    connection.commit()
+        query.append(sql)
+    return query
